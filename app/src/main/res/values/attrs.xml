@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="WeatherChartView">
+        <attr name="textColor" format="color"/>
+        <attr name="dayColor" format="color"/>
+        <attr name="nightColor" format="color"/>
+        <attr name="textSize" format="dimension"/>
+    </declare-styleable>
+    <!--注意这里的name要和自定义View的名称一致，不然在xml布局中无法引用-->
+    <declare-styleable name="CircleBarView">
+        <attr name="progress_color" format="color"></attr>
+        <attr name="bg_color" format="color"></attr>
+
+        <attr name="bar_width" format="dimension"></attr>
+
+        <attr name="start_angle" format="float"></attr>
+        <attr name="sweep_angle" format="float"></attr>
+    </declare-styleable>
+
+</resources>

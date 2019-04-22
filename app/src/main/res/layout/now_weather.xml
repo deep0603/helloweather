@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="25dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp">
+        <TextView
+            android:text="6"
+            android:id="@+id/now_tmp"
+            android:textSize="100sp"
+            android:textColor="#fff"
+            android:textStyle="normal"
+            android:fontFamily="sans-serif-thin"
+            android:gravity="bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="°"
+                android:layout_marginTop="25dp"
+                android:textColor="#fff"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:text="晴"
+                android:id="@+id/now_weather"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp">
+        <TextView
+            android:text="东北风"
+            android:id="@+id/now_fengxiang"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="4-5级"
+            android:id="@+id/now_wendlevel"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="湿度"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="48%"
+            android:id="@+id/now_shidu"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:text="愿你拥有比阳光明媚的心情"
+        android:id="@+id/now_notice"
+        android:textSize="10sp"
+        android:textColor="#fff"
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

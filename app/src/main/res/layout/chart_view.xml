@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:wcv="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:text="未来4天"
+            android:textColor="@color/colorWhite"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_line"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/forecase_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+        </LinearLayout>
+    </LinearLayout>
+   <com.example.fuck.helloweather.view.WeatherChartView
+       android:id="@+id/line_char"
+       android:layout_width="match_parent"
+       android:layout_height="150dp"
+       wcv:dayColor="@color/colorAccent"
+       wcv:nightColor="@color/colorPrimary"
+       wcv:textColor="@color/colorWhite"
+       wcv:textSize="14sp"/>
+</LinearLayout>
